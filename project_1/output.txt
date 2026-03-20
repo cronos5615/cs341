@@ -1,0 +1,382 @@
+Project 1 for CS 341
+Section number: H02
+Semester: Spring 2026
+Written by: Arda Ayna, aa3755
+Instructor: Marvin Nakayama, marvin@njit.edu
+
+Enter the number of test cases: 
+Amount of test cases to process: 20
+Enter string 1 of 20: 
+The string to process is: njit@njit.int
+State before - q0, read 'n', new state - q1
+State before - q1, read 'j', new state - q1
+State before - q1, read 'i', new state - q1
+State before - q1, read 't', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'n', new state - q3
+State before - q3, read 'j', new state - q3
+State before - q3, read 'i', new state - q3
+State before - q3, read 't', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+The string njit@njit.int is accepted.
+Enter string 2 of 20: 
+The string to process is: b@d.int
+State before - q0, read 'b', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'd', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+The string b@d.int is accepted.
+Enter string 3 of 20: 
+The string to process is: tuv@wxyz.inc
+State before - q0, read 't', new state - q1
+State before - q1, read 'u', new state - q1
+State before - q1, read 'v', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'w', new state - q3
+State before - q3, read 'x', new state - q3
+State before - q3, read 'y', new state - q3
+State before - q3, read 'z', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 'c', new state - q7
+The string tuv@wxyz.inc is accepted.
+Enter string 4 of 20: 
+The string to process is: opqr@.int
+State before - q0, read 'o', new state - q1
+State before - q1, read 'p', new state - q1
+State before - q1, read 'q', new state - q1
+State before - q1, read 'r', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string opqr@.int is rejected.
+Enter string 5 of 20: 
+The string to process is: web.rstuv.b.int.cdef@in.int.i.inte.int
+State before - q0, read 'w', new state - q1
+State before - q1, read 'e', new state - q1
+State before - q1, read 'b', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'r', new state - q1
+State before - q1, read 's', new state - q1
+State before - q1, read 't', new state - q1
+State before - q1, read 'u', new state - q1
+State before - q1, read 'v', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'b', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'i', new state - q1
+State before - q1, read 'n', new state - q1
+State before - q1, read 't', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'c', new state - q1
+State before - q1, read 'd', new state - q1
+State before - q1, read 'e', new state - q1
+State before - q1, read 'f', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read 'e', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+The string web.rstuv.b.int.cdef@in.int.i.inte.int is accepted.
+Enter string 6 of 20: 
+The string to process is: ii@iii.int..int
+State before - q0, read 'i', new state - q1
+State before - q1, read 'i', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'i', new state - q3
+State before - q3, read 'i', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string ii@iii.int..int is rejected.
+Enter string 7 of 20: 
+The string to process is: zyx.w.@phone.int
+State before - q0, read 'z', new state - q1
+State before - q1, read 'y', new state - q1
+State before - q1, read 'x', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'w', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read '@', new state - q9
+State before - q9, read 'p', new state - q9
+State before - q9, read 'h', new state - q9
+State before - q9, read 'o', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 'e', new state - q9
+State before - q9, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string zyx.w.@phone.int is rejected.
+Enter string 8 of 20: 
+The string to process is: net@internet.int.
+State before - q0, read 'n', new state - q1
+State before - q1, read 'e', new state - q1
+State before - q1, read 't', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 't', new state - q3
+State before - q3, read 'e', new state - q3
+State before - q3, read 'r', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 'e', new state - q3
+State before - q3, read 't', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '.', new state - q4
+The string net@internet.int. is rejected.
+Enter string 9 of 20: 
+The string to process is: yellow@abc.int.intint
+State before - q0, read 'y', new state - q1
+State before - q1, read 'e', new state - q1
+State before - q1, read 'l', new state - q1
+State before - q1, read 'l', new state - q1
+State before - q1, read 'o', new state - q1
+State before - q1, read 'w', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'a', new state - q3
+State before - q3, read 'b', new state - q3
+State before - q3, read 'c', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 't', new state - q3
+The string yellow@abc.int.intint is rejected.
+Enter string 10 of 20: 
+The string to process is: rand@int
+State before - q0, read 'r', new state - q1
+State before - q1, read 'a', new state - q1
+State before - q1, read 'n', new state - q1
+State before - q1, read 'd', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 't', new state - q3
+The string rand@int is rejected.
+Enter string 11 of 20: 
+The string to process is: r.ewq@g.int.inc.ing
+State before - q0, read 'r', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'e', new state - q1
+State before - q1, read 'w', new state - q1
+State before - q1, read 'q', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'g', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 'c', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 'g', new state - q3
+The string r.ewq@g.int.inc.ing is rejected.
+Enter string 12 of 20: 
+The string to process is: www@int.inte
+State before - q0, read 'w', new state - q1
+State before - q1, read 'w', new state - q1
+State before - q1, read 'w', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 't', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read 'e', new state - q3
+The string www@int.inte is rejected.
+Enter string 13 of 20: 
+The string to process is: wwwc@inc.inc
+State before - q0, read 'w', new state - q1
+State before - q1, read 'w', new state - q1
+State before - q1, read 'w', new state - q1
+State before - q1, read 'c', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 'c', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 'c', new state - q7
+The string wwwc@inc.inc is accepted.
+Enter string 14 of 20: 
+The string to process is: .five@six.int
+State before - q0, read '.', new state - q9
+State before - q9, read 'f', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'v', new state - q9
+State before - q9, read 'e', new state - q9
+State before - q9, read '@', new state - q9
+State before - q9, read 's', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'x', new state - q9
+State before - q9, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string .five@six.int is rejected.
+Enter string 15 of 20: 
+The string to process is: inting@inc.int@
+State before - q0, read 'i', new state - q1
+State before - q1, read 'n', new state - q1
+State before - q1, read 't', new state - q1
+State before - q1, read 'i', new state - q1
+State before - q1, read 'n', new state - q1
+State before - q1, read 'g', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 'c', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '@', new state - q9
+The string inting@inc.int@ is rejected.
+Enter string 16 of 20: 
+The string to process is: internal@inject.inc.intt
+State before - q0, read 'i', new state - q1
+State before - q1, read 'n', new state - q1
+State before - q1, read 't', new state - q1
+State before - q1, read 'e', new state - q1
+State before - q1, read 'r', new state - q1
+State before - q1, read 'n', new state - q1
+State before - q1, read 'a', new state - q1
+State before - q1, read 'l', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read 'n', new state - q3
+State before - q3, read 'j', new state - q3
+State before - q3, read 'e', new state - q3
+State before - q3, read 'c', new state - q3
+State before - q3, read 't', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 'c', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read 't', new state - q3
+The string internal@inject.inc.intt is rejected.
+Enter string 17 of 20: 
+The string to process is: i.iam.i@i.int.inc
+State before - q0, read 'i', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'i', new state - q1
+State before - q1, read 'a', new state - q1
+State before - q1, read 'm', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'i', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read 'i', new state - q3
+State before - q3, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 't', new state - q7
+State before - q7, read '.', new state - q4
+State before - q4, read 'i', new state - q5
+State before - q5, read 'n', new state - q6
+State before - q6, read 'c', new state - q7
+The string i.iam.i@i.int.inc is accepted.
+Enter string 18 of 20: 
+The string to process is: @ghij.int
+State before - q0, read '@', new state - q9
+State before - q9, read 'g', new state - q9
+State before - q9, read 'h', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'j', new state - q9
+State before - q9, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string @ghij.int is rejected.
+Enter string 19 of 20: 
+The string to process is: xyzz.bcde.ijkl@.int
+State before - q0, read 'x', new state - q1
+State before - q1, read 'y', new state - q1
+State before - q1, read 'z', new state - q1
+State before - q1, read 'z', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'b', new state - q1
+State before - q1, read 'c', new state - q1
+State before - q1, read 'd', new state - q1
+State before - q1, read 'e', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read 'i', new state - q1
+State before - q1, read 'j', new state - q1
+State before - q1, read 'k', new state - q1
+State before - q1, read 'l', new state - q1
+State before - q1, read '@', new state - q2
+State before - q2, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string xyzz.bcde.ijkl@.int is rejected.
+Enter string 20 of 20: 
+The string to process is: abcd..efg@fort.int
+State before - q0, read 'a', new state - q1
+State before - q1, read 'b', new state - q1
+State before - q1, read 'c', new state - q1
+State before - q1, read 'd', new state - q1
+State before - q1, read '.', new state - q8
+State before - q8, read '.', new state - q9
+State before - q9, read 'e', new state - q9
+State before - q9, read 'f', new state - q9
+State before - q9, read 'g', new state - q9
+State before - q9, read '@', new state - q9
+State before - q9, read 'f', new state - q9
+State before - q9, read 'o', new state - q9
+State before - q9, read 'r', new state - q9
+State before - q9, read 't', new state - q9
+State before - q9, read '.', new state - q9
+State before - q9, read 'i', new state - q9
+State before - q9, read 'n', new state - q9
+State before - q9, read 't', new state - q9
+The string abcd..efg@fort.int is rejected.
