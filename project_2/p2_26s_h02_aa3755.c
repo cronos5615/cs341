@@ -53,7 +53,7 @@ int main(){
         getline(&b,&buffsize,stdin);
         printf("The string to process is: %s", b);
         result = pda755(b);
-        if(result == 7)
+        if (result == 10)
             printf("The string %s is accepted.\n",b);
         else    
             printf("The string %s is rejected.\n",b);
@@ -108,12 +108,10 @@ int pda755(char* testcase){
     for(i = 0; (c = *(testcase+i)) != '\n' && c != '\r'; i++){
         transition755(c,&state);
         if(state==-1)
-            return state;
+            break;
     }
 
-
-    //changing \r or \n (depending on file type) to \0 so that \r\n is not printed when printing the string
-    //otherwise causes weird formatting of output
+    free((void*)state);
     *(testcase+i) = '\0';
     return state;
 
@@ -127,34 +125,139 @@ void transition755(char c, int* state){
 
     switch (*state){
         case 0:
+            from = 0;
             if(c=='d'){
                 safe_push755(pushed = '$');
                 *state = 1;
-                from = 0;
-                break;
             }
+            else
+                *state = -1;
+            break;
         case 1:
-
+            from = 1;
+            if(c=='w')
+                *state = 2;
+            else    
+                *state = -1;
+            break;
         case 2:
+            from = 2;
+            if(c=='w')
+                *state = 3;
+            else if (c=='q')
+                *state = 4;
+            else
+                *state = -1;
+            break;
 
         case 3:
-
+            from = 3;
+            if(c=='(')
+                safe_push755(pushed = c);
+            else if (c=='.')
+                *state = 6;
+            else if(c >='0' && c <= '9')
+                *state = 5;
+            else 
+                *state = -1;
+            break;
         case 4:
-
+        from = 4;
+            if(c=='p'){
+                safe_push755(pushed = c);
+                *state = 2;
+            }
+            else
+                *state = -1;
+            break;
         case 5:
+            from = 5;
+            if(c >='0' && c <= '9')
+                ;
+            else if (c=='.')
+                *state = 7;
+            else
+                *state = -1;
+            break;
 
         case 6:
+            from = 6;
+            if(c >='0' && c <= '9')
+                *state = 7;
+            else
+                *state = -1;
+            break;
+            
 
         case 7:
-
+            from = 7;
+            if(c >='0' && c <= '9')
+                ;
+            else if (c == ')'){
+                
+                if ((popped = safe_pop755()) == '('){
+                    *state = 8;
+                }
+                else
+                    *state = -1;
+                
+            }
+            else if (c== 'v')
+                *state = 9;
+            else if (c=='+' || c == '-' || c == '*' || c == '/')
+                *state = 3;
+            else
+                *state = -1;
         case 8:
+            from = 8;
+            if (c == ')'){
+                
+                if ((popped = safe_pop755()) == '('){
+                    ;
+                }
+                else
+                    *state = -1;
+                
+            }
+            else if (c== 'v')
+                *state = 9;
+            else if (c=='+' || c == '-' || c == '*' || c == '/')
+                *state = 3;
+            else
+                *state = -1;
 
         case 9:
-
+            from = 9;
+            if(c == 'd'){
+                if((popped = safe_pop755()) == 'p')
+                    ;
+                else
+                    *state = -1;
+            }
+            else if (c == 'v'){
+                if((popped = safe_pop755()) == '$')
+                    *state=10;
+                else
+                    *state = -1;
+            }
+            else
+                *state = -1;
+            break;
         case 10:
+            from = 10;
+            *state = -1;
+            /*
+                by design, we should never actually go into this case, as reading the last v should set state to 10 and the transition function should not be called after that.
+                if we enter here, there is at least 1 extra character in the string.
+            */
+            
 
 
     }
-    printf("Prior state q%d, read %c, popped %s, pushed %c, new state q%d",from,c,(popped ? popped : "nothing"), (pushed ? pushed : "nothing"), *state);
+    if(*state = -1){
+        printf("The PDA crashed on the following transition:\nPrior state q%d, read %c, popped %c, pushed %c\n",from,c,(popped ? popped : ' '), (pushed ? pushed : ' '));
+        return;
+    }
+    printf("Prior state q%d, read %c, popped %c, pushed %c, new state q%d\n",from,c,(popped ? popped : ' '), (pushed ? pushed : ' '), *state);
 
 }
