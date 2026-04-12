@@ -1,10 +1,9 @@
-from sys import exit
+import re
 print("Project 3 for CS 341\nSection number: H02\nSemester: Spring 2026\nWritten by: Arda Ayna, aa3755\nInstructor: Marvin Nakayama, marvin@njit.edu\n")
 
 
 def process():
     case_count = input("Enter the number of encoded problem instances to process (m>=0): \n")
-    test_cases = []
     try:
         case_count = int(case_count)
     except ValueError:
@@ -20,8 +19,9 @@ def process():
     print(f"The number of encoded problem instances to process: {case_count}")
     for i in range(1,case_count+1):
         case = input(f"Enter encoded problem instance {i} of {case_count}: \n")
-        test_cases.append(case)
-
+        #using regex to match the input to the required format.
+        case = case.strip()
+        regex = "^(#*)(\{(q\[0-9\]+,)*q\[0-9\]\}),\{((.,)*.)?\},\$*"
 
 
 process()
