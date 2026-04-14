@@ -1,0 +1,409 @@
+Project 2 for CS 341
+Section number: H02
+Semester: Spring 2026
+Written by: Arda Ayna, aa3755
+Instructor: Marvin Nakayama, marvin@njit.edu
+
+Enter the number of test cases: 
+Amount of test cases to process: 15
+Enter string 1 of 15: 
+The string to process is: dwppppppw123.4567vdddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read 1, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read 3, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 4, popped  , pushed  , new state q7
+Prior state q7, read 5, popped  , pushed  , new state q7
+Prior state q7, read 6, popped  , pushed  , new state q7
+Prior state q7, read 7, popped  , pushed  , new state q7
+Prior state q7, read v, popped  , pushed  , new state q9
+Prior state q9, read d, popped p, pushed  , new state q9
+Prior state q9, read d, popped p, pushed  , new state q9
+Prior state q9, read d, popped p, pushed  , new state q9
+Prior state q9, read v, popped $, pushed  , new state q10
+The string dwppppppw123.4567vdddv is accepted.
+Enter string 2 of 15: 
+The string to process is: dww26.9371/0.371+.2+498.+vv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read 2, popped  , pushed  , new state q5
+Prior state q5, read 6, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 9, popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 7, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read /, popped  , pushed  , new state q3
+Prior state q3, read 0, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 7, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 2, popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read 4, popped  , pushed  , new state q5
+Prior state q5, read 9, popped  , pushed  , new state q5
+Prior state q5, read 8, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+The PDA crashed on the following transition:
+Prior state q3, read v, popped  , pushed  
+The string dww26.9371/0.371+.2+498.+vv is rejected.
+Enter string 3 of 15: 
+The string to process is: dww185.+.95*212.2478/5.4817/00.33-.8+.51/2.vv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read 1, popped  , pushed  , new state q5
+Prior state q5, read 8, popped  , pushed  , new state q5
+Prior state q5, read 5, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 9, popped  , pushed  , new state q7
+Prior state q7, read 5, popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read 2, popped  , pushed  , new state q5
+Prior state q5, read 1, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read 4, popped  , pushed  , new state q7
+Prior state q7, read 7, popped  , pushed  , new state q7
+Prior state q7, read 8, popped  , pushed  , new state q7
+Prior state q7, read /, popped  , pushed  , new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 4, popped  , pushed  , new state q7
+Prior state q7, read 8, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read 7, popped  , pushed  , new state q7
+Prior state q7, read /, popped  , pushed  , new state q3
+Prior state q3, read 0, popped  , pushed  , new state q5
+Prior state q5, read 0, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 8, popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 5, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read /, popped  , pushed  , new state q3
+Prior state q3, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read v, popped  , pushed  , new state q9
+Prior state q9, read v, popped $, pushed  , new state q10
+The string dww185.+.95*212.2478/5.4817/00.33-.8+.51/2.vv is accepted.
+Enter string 4 of 15: 
+The string to process is: dwppw14.13*4.381vddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read 1, popped  , pushed  , new state q5
+Prior state q5, read 4, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read 4, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 8, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read v, popped  , pushed  , new state q9
+Prior state q9, read d, popped p, pushed  , new state q9
+The PDA crashed on the following transition:
+Prior state q9, read d, popped $, pushed  
+The string dwppw14.13*4.381vddv is rejected.
+Enter string 5 of 15: 
+The string to process is: dwppw8.2-.*204.98vdv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read 8, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+The PDA crashed on the following transition:
+Prior state q6, read *, popped  , pushed  
+The string dwppw8.2-.*204.98vdv is rejected.
+Enter string 6 of 15: 
+The string to process is: dww.5912.67+16.98vv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 5, popped  , pushed  , new state q7
+Prior state q7, read 9, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+The PDA crashed on the following transition:
+Prior state q7, read ., popped  , pushed  
+The string dww.5912.67+16.98vv is rejected.
+Enter string 7 of 15: 
+The string to process is: dwppw(52.322-(7.-.98)/74).45vdv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 7, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 9, popped  , pushed  , new state q7
+Prior state q7, read 8, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read /, popped  , pushed  , new state q3
+Prior state q3, read 7, popped  , pushed  , new state q5
+Prior state q5, read 4, popped  , pushed  , new state q5
+The PDA crashed on the following transition:
+Prior state q5, read ), popped  , pushed  
+The string dwppw(52.322-(7.-.98)/74).45vdv is rejected.
+Enter string 8 of 15: 
+The string to process is: dwppppw(.428)38vddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 4, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read 8, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+The PDA crashed on the following transition:
+Prior state q8, read 3, popped  , pushed  
+The string dwppppw(.428)38vddv is rejected.
+Enter string 9 of 15: 
+The string to process is: dwppw(())vdv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+The PDA crashed on the following transition:
+Prior state q3, read ), popped  , pushed  
+The string dwppw(())vdv is rejected.
+Enter string 10 of 15: 
+The string to process is: dwpw((00.310+(00.000-510.6)*411.3))+((.8/34.))vddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+The PDA crashed on the following transition:
+Prior state q4, read w, popped  , pushed  
+The string dwpw((00.310+(00.000-510.6)*411.3))+((.8/34.))vddv is rejected.
+Enter string 11 of 15: 
+The string to process is: dwppppw+98.5vddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+The PDA crashed on the following transition:
+Prior state q3, read +, popped  , pushed  
+The string dwppppw+98.5vddv is rejected.
+Enter string 12 of 15: 
+The string to process is: dwppppw((5.0+(59.9*(.4+931.32))/9.34)vddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 0, popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read 9, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 9, popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 4, popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read 9, popped  , pushed  , new state q5
+Prior state q5, read 3, popped  , pushed  , new state q5
+Prior state q5, read 1, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read ), popped (, pushed  , new state q8
+Prior state q8, read /, popped  , pushed  , new state q3
+Prior state q3, read 9, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read 4, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read v, popped  , pushed  , new state q9
+The PDA crashed on the following transition:
+Prior state q9, read d, popped (, pushed  
+The string dwppppw((5.0+(59.9*(.4+931.32))/9.34)vddv is rejected.
+Enter string 13 of 15: 
+The string to process is: dww3.0*(.2/((23.+.21)/(7.3)-22.1)+4.)/(((62.*.6-0.*2.0)/.76))+.0vv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read 3, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 0, popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 2, popped  , pushed  , new state q7
+Prior state q7, read /, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 2, popped  , pushed  , new state q5
+Prior state q5, read 3, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 2, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read /, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 7, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 3, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read -, popped  , pushed  , new state q3
+Prior state q3, read 2, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read +, popped  , pushed  , new state q3
+Prior state q3, read 4, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read /, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 6, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 6, popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+Prior state q3, read 0, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 0, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read /, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 7, popped  , pushed  , new state q7
+Prior state q7, read 6, popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read ), popped (, pushed  , new state q8
+Prior state q8, read +, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 0, popped  , pushed  , new state q7
+Prior state q7, read v, popped  , pushed  , new state q9
+Prior state q9, read v, popped $, pushed  , new state q10
+The string dww3.0*(.2/((23.+.21)/(7.3)-22.1)+4.)/(((62.*.6-0.*2.0)/.76))+.0vv is accepted.
+Enter string 14 of 15: 
+The string to process is: dwppppw.412*(5.1+.52-*21.))vddv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 4, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read *, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 5, popped  , pushed  , new state q7
+Prior state q7, read 2, popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+The PDA crashed on the following transition:
+Prior state q3, read *, popped  , pushed  
+The string dwppppw.412*(5.1+.52-*21.))vddv is rejected.
+Enter string 15 of 15: 
+The string to process is: dwppw(482.+(.31-52.))/56.)*12.1+(3.52/.2vdv
+Prior state q0, read d, popped  , pushed $, new state q1
+Prior state q1, read w, popped  , pushed  , new state q2
+Prior state q2, read p, popped  , pushed  , new state q4
+Prior state q4, read p, popped  , pushed p, new state q2
+Prior state q2, read w, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read 4, popped  , pushed  , new state q5
+Prior state q5, read 8, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read +, popped  , pushed  , new state q3
+Prior state q3, read (, popped  , pushed (, new state q3
+Prior state q3, read ., popped  , pushed  , new state q6
+Prior state q6, read 3, popped  , pushed  , new state q7
+Prior state q7, read 1, popped  , pushed  , new state q7
+Prior state q7, read -, popped  , pushed  , new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read 2, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+Prior state q7, read ), popped (, pushed  , new state q8
+Prior state q8, read ), popped (, pushed  , new state q8
+Prior state q8, read /, popped  , pushed  , new state q3
+Prior state q3, read 5, popped  , pushed  , new state q5
+Prior state q5, read 6, popped  , pushed  , new state q5
+Prior state q5, read ., popped  , pushed  , new state q7
+The PDA crashed on the following transition:
+Prior state q7, read ), popped p, pushed  
+The string dwppw(482.+(.31-52.))/56.)*12.1+(3.52/.2vdv is rejected.

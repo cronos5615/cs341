@@ -6,30 +6,31 @@ Semester: Spring 26
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define MAX_SIZE 100
 
 int stack_size = 20, stackptr = -1;
 char* stack;
 
 int pda755(char* str);
+void transition755(char c, int* state);
 /*
     I reused the main function from project 1 
     as its function is significantly similar to the 
     requirements of this project.
-    The main difference is that this one is compliant with the ANSI C standard.
 
 */
 int main(){ 
     char buffer[MAX_SIZE];
     long itercount;
-    char *endptr,*b;
+    char *endptr=0,*b=0;
     int i,result;
     size_t buffsize = MAX_SIZE;
     printf("Project 2 for CS 341\nSection number: H02\nSemester: Spring 2026\nWritten by: Arda Ayna, aa3755\nInstructor: Marvin Nakayama, marvin@njit.edu\n");
     printf("\nEnter the number of test cases: \n");
+
     getline(&b,&buffsize,stdin);
 
-    
     itercount = strtol(b,&endptr,10);
 
     if (b==endptr || (*endptr != '\n' && *endptr != '\r')){
@@ -102,23 +103,27 @@ int pda755(char* testcase){
     /*
         using malloc to create the stack so that memory can be reallocated as stack grows/shrinks
     */
-    stack =(char *)malloc(stack_size);
     int i,state = 0;
     char c;
+    stack =(char *)malloc(stack_size);
+    
     for(i = 0; (c = *(testcase+i)) != '\n' && c != '\r'; i++){
         transition755(c,&state);
         if(state==-1)
             break;
     }
 
-    free((void*)state);
-    *(testcase+i) = '\0';
+    free((void*)stack);
+    *(testcase+strlen(testcase)-1) = '\0';
     return state;
 
 
 
 }
-
+/*
+    Similar logic to the DFA, a switch function acts as the transition function. the pda function calls 
+    the transition function repeatedly for each character in the testcase until it crashes, accepts, or rejects.
+*/
 void transition755(char c, int* state){
     int from;
     char popped = 0, pushed = 0;
@@ -144,7 +149,7 @@ void transition755(char c, int* state){
             from = 2;
             if(c=='w')
                 *state = 3;
-            else if (c=='q')
+            else if (c=='p')
                 *state = 4;
             else
                 *state = -1;
@@ -202,12 +207,13 @@ void transition755(char c, int* state){
                     *state = -1;
                 
             }
-            else if (c== 'v')
+            else if (c == 'v')
                 *state = 9;
             else if (c=='+' || c == '-' || c == '*' || c == '/')
                 *state = 3;
             else
                 *state = -1;
+            break;
         case 8:
             from = 8;
             if (c == ')'){
@@ -225,7 +231,7 @@ void transition755(char c, int* state){
                 *state = 3;
             else
                 *state = -1;
-
+            break;
         case 9:
             from = 9;
             if(c == 'd'){
@@ -254,7 +260,7 @@ void transition755(char c, int* state){
 
 
     }
-    if(*state = -1){
+    if(*state == -1){
         printf("The PDA crashed on the following transition:\nPrior state q%d, read %c, popped %c, pushed %c\n",from,c,(popped ? popped : ' '), (pushed ? pushed : ' '));
         return;
     }
